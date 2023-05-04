@@ -84,6 +84,7 @@ div.campo > span {
     font-size: 2em;
     width: 40px;
     padding: 5px;
+    transform: translateY(-8px);
 }
 
 div.campo > input {
