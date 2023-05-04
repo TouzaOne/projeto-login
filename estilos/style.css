@@ -28,8 +28,7 @@ main {
 section#login {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;    
     overflow: hidden;
 
     background-color: white;
@@ -38,16 +37,17 @@ section#login {
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.527);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/fundo_riscado-peq.jpg) no-repeat;
+    background: #5f2c82 url(../imagens/corredor_de_vidro-peq.jpg) no-repeat;
     height: 200px;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 section#login > div#formulario {
@@ -62,10 +62,12 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+    margin: 10px 0px;
 }
 
 form > div.campo {
     background-color: #602c82bb;
+    border: 2px solid #602c82bb;
     display: block;
     width: 100%;
     height: 40px;
@@ -75,6 +77,28 @@ form > div.campo {
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: black;    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;    
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 10px;
+    transform: translateY(-11.5px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
