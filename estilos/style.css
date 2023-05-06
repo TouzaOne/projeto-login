@@ -33,7 +33,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 525px;
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.527);
 
@@ -104,7 +104,6 @@ div.campo > input:focus-within {
 
 form > input[type=checkbox] {
     display: inline;    
-    font-size: 1em;
     width: 20px;    
     margin-bottom: 15px;
 }
