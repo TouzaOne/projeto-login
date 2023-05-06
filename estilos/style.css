@@ -102,6 +102,13 @@ div.campo > input:focus-within {
     background-color: white;
 }
 
+form > input[type=checkbox] {
+    display: inline;    
+    font-size: 1em;
+    width: 20px;    
+    margin-bottom: 15px;
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
@@ -118,21 +125,20 @@ form > input[type=submit]:hover {
     background-color: #2d6462;
 }
 
-form > a.botao {
+div#formulario > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    padding-top: 5px;
-    margin-top: 0px;
+    
     text-decoration: none;
 }
 
-form > a.botao:hover {
+div#formulario > a.botao:hover {
     text-decoration: underline;
 }
 
-form > a.botao > span {
+div#formulario > a.botao > span {
     font-size: 1em;
 }
